@@ -1,0 +1,91 @@
+
+#considerations {
+    min-height: calc(100vh - 91px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+}
+
+#user_page {
+    height: 700px;
+    width: auto;
+}
+
+#considerations .section-subtitle {
+    font-size: 3rem;
+}
+
+#considerations_content {
+    width: 50%;
+}
+
+#columns {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 40px;
+    margin-top: 30px;
+}
+
+.column {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: var(--color-gray-3);
+    padding: 12px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+}
+
+.soon {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    object-fit: cover;
+    
+}
+
+.column-content p {
+    color: var(--color-white-1);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+@media screen and (max-width: 1170px) {
+    #considerations {
+        flex-direction: column;
+    }
+
+    #considerations .section-subtitle {
+        text-align: center;
+        font-size: 2.5rem;
+    }
+
+    #user_page {
+        display: none;
+    }
+
+    #considerations_content {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #considerations .section-subtitle {
+        font-size: 2.2rem;
+    }
+
+     #considerations_content {
+        width: 100%;
+     }
+
+    .column {
+        flex-direction: column;
+
+    }
+}
